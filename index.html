@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Akshit Pawar - Computer Engineering Student & Aspiring Game Developer. Portfolio showcasing projects, skills, and experience.">
+    <meta name="keywords" content="Akshit Pawar, Portfolio, Web Developer, Game Developer, Computer Engineering">
+    <title>Akshit Pawar | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <!-- ===================== LOADING SCREEN ===================== -->
+    <div id="loader">
+        <div class="loader-content">
+            <div class="loader-logo">
+                <span class="loader-letter" style="--i:0">A</span>
+                <span class="loader-letter" style="--i:1">K</span>
+                <span class="loader-letter" style="--i:2">S</span>
+                <span class="loader-letter" style="--i:3">H</span>
+                <span class="loader-letter" style="--i:4">I</span>
+                <span class="loader-letter" style="--i:5">T</span>
+            </div>
+            <div class="loader-bar-track">
+                <div class="loader-bar-fill"></div>
+            </div>
+            <p class="loader-tagline">Loading portfolio...</p>
+        </div>
+    </div>
+
+    <!-- ===================== CURSOR GLOW ===================== -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- ===================== NAVBAR ===================== -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">AP<span class="logo-dot">.</span></a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#achievements" class="nav-link">Achievements</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ===================== HERO ===================== -->
+    <section id="hero">
+        <div class="hero-bg-grid"></div>
+        <div class="hero-particles" id="heroParticles"></div>
+        <div class="hero-content">
+            <p class="hero-greeting">Hello, I'm</p>
+            <h1 class="hero-name">Akshit <span class="highlight">Pawar</span></h1>
+            <div class="hero-typing-wrapper">
+                <span class="hero-typing" id="heroTyping"></span>
+                <span class="typing-cursor">|</span>
+            </div>
+            <p class="hero-description">
+                Computer Engineering student passionate about building digital experiences & game development.
+            </p>
+            <div class="hero-cta">
+                <a href="#projects" class="btn btn-primary">
+                    <span>View My Work</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#contact" class="btn btn-outline">
+                    <span>Let's Connect</span>
+                    <i class="fas fa-paper-plane"></i>
+                </a>
+            </div>
+            <div class="hero-socials">
+                <a href="https://github.com/CristianoRonaldo070" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/akshit-pawar-a0b952286/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="mailto:akshitpawar1001@gmail.com" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+        <a href="#about" class="scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <span>Scroll Down</span>
+        </a>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About <span class="highlight">Me</span></h2>
+            <div class="section-line"></div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>
+                        I'm <strong>Akshit Manjit Pawar</strong>, a Computer Engineering diploma student at
+                        <strong>Zeal Polytechnic, Narhe, Pune</strong>. I'm passionate about creating meaningful
+                        digital experiences through web development and game design.
+                    </p>
+                    <p>
+                        My goal is to secure an entry-level opportunity in a progressive organization where I can
+                        apply my engineering fundamentals and gain practical experience, while continuously developing
+                        my skills to grow into a responsible engineering professional.
+                    </p>
+                    <p>
+                        I'm especially passionate about <strong>game development</strong> and enjoy exploring
+                        tools like <strong>Blender</strong> and <strong>Unreal Engine 5</strong>. I'm a quick learner who adapts
+                        well to new technologies and thrives in collaborative team environments.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-card">
+                            <span class="stat-number" data-target="4">0</span>
+                            <span class="stat-label">Projects</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number" data-target="2">0</span>
+                            <span class="stat-label">Internships</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number" data-target="7">0</span>
+                            <span class="stat-label">Technologies</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number" data-target="4">0</span>
+                            <span class="stat-label">Achievements</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-details">
+                    <h3 class="about-details-title">Quick Info</h3>
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <i class="fas fa-user"></i>
+                            <div>
+                                <span class="info-label">Name</span>
+                                <span class="info-value">Akshit Manjit Pawar</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <span class="info-label">Location</span>
+                                <span class="info-value">Kothrud, Pune</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div>
+                                <span class="info-label">Education</span>
+                                <span class="info-value">Diploma in Computer Engg.</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-language"></i>
+                            <div>
+                                <span class="info-label">Languages</span>
+                                <span class="info-value">English, Hindi, Marathi</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-gamepad"></i>
+                            <div>
+                                <span class="info-label">Passion</span>
+                                <span class="info-value">Game Development</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <div>
+                                <span class="info-label">Interest</span>
+                                <span class="info-value">Ethical Hacking</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== SKILLS ===================== -->
+    <section id="skills" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">My <span class="highlight">Skills</span></h2>
+            <div class="section-line"></div>
+            <div class="skills-grid">
+
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <i class="fas fa-code"></i>
+                        <h3>Programming Languages</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag" data-level="90">C</span>
+                        <span class="skill-tag" data-level="85">C++</span>
+                        <span class="skill-tag" data-level="80">Java</span>
+                        <span class="skill-tag" data-level="60">Python</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <i class="fas fa-globe"></i>
+                        <h3>Web Technologies</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag" data-level="90">HTML</span>
+                        <span class="skill-tag" data-level="85">CSS</span>
+                        <span class="skill-tag" data-level="80">JavaScript</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <i class="fas fa-database"></i>
+                        <h3>Database</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag" data-level="85">MySQL</span>
+                        <span class="skill-tag" data-level="75">Supabase</span>
+                        <span class="skill-tag" data-level="70">MongoDB</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <i class="fas fa-tools"></i>
+                        <h3>Tools & Software</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag" data-level="90">VS Code</span>
+                        <span class="skill-tag" data-level="85">GitHub</span>
+                        <span class="skill-tag" data-level="80">MS Office</span>
+                        <span class="skill-tag" data-level="70">Blender</span>
+                        <span class="skill-tag" data-level="65">Unreal Engine 5</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <i class="fas fa-desktop"></i>
+                        <h3>Operating Systems</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag" data-level="90">Windows</span>
+                        <span class="skill-tag" data-level="70">Linux</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <i class="fas fa-robot"></i>
+                        <h3>AI Tools</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag" data-level="85">Claude</span>
+                        <span class="skill-tag" data-level="85">Gemini</span>
+                        <span class="skill-tag" data-level="80">ChatGPT</span>
+                        <span class="skill-tag" data-level="75">Flow</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== PROJECTS ===================== -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">My <span class="highlight">Projects</span></h2>
+            <div class="section-line"></div>
+            <div class="projects-grid">
+
+                <div class="project-card" data-tilt>
+                    <div class="project-card-glow"></div>
+                    <div class="project-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <div class="project-number">01</div>
+                    <h3>Library Management System</h3>
+                    <p>
+                        A database-driven system built with MySQL for managing book records, member information,
+                        and book borrowing/returning. Enables easy tracking of due dates, availability,
+                        and member history.
+                    </p>
+                    <div class="project-tech">
+                        <span>MySQL</span>
+                        <span>Database</span>
+                    </div>
+                </div>
+
+                <div class="project-card" data-tilt>
+                    <div class="project-card-glow"></div>
+                    <div class="project-icon">
+                        <i class="fas fa-wallet"></i>
+                    </div>
+                    <div class="project-number">02</div>
+                    <h3>CashChrono</h3>
+                    <p>
+                        A daily expense tracking website built as an internship project.
+                        Manages spending across different categories to help users track
+                        and save money efficiently.
+                    </p>
+                    <div class="project-tech">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+
+                <div class="project-card" data-tilt>
+                    <div class="project-card-glow"></div>
+                    <div class="project-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <div class="project-number">03</div>
+                    <h3>SwordFall: An RPG Game</h3>
+                    <p>
+                        A team-built RPG game designed for immersive gaming experience.
+                        My role involved creating levels, finding assets, and animating
+                        zombies using Godot Engine, Blender, Mixamo, and Figma.
+                    </p>
+                    <div class="project-tech">
+                        <span>Godot</span>
+                        <span>Blender</span>
+                        <span>Mixamo</span>
+                        <span>Figma</span>
+                    </div>
+                </div>
+
+                <div class="project-card" data-tilt>
+                    <div class="project-card-glow"></div>
+                    <div class="project-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="project-number">04</div>
+                    <h3>Webnario</h3>
+                    <p>
+                        A freelancer platform with admin dashboard for managing client projects.
+                        Features include project submission, admin approval system, and live
+                        chatting for real-time client communication.
+                    </p>
+                    <div class="project-tech">
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>MongoDB</span>
+                        <span>Socket.IO</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== EXPERIENCE ===================== -->
+    <section id="experience" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Experience & <span class="highlight">Education</span></h2>
+            <div class="section-line"></div>
+            <div class="timeline">
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-badge education">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <span class="timeline-date">Aug 2023 — May 2026</span>
+                        <h3>Diploma in Computer Engineering</h3>
+                        <h4>Zeal Polytechnic, Narhe, Pune</h4>
+                        <p>Relevant coursework: C, C++, Java, Python, Web Development, Database Management, Operating Systems, Software Engineering, Software Testing.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-badge education">
+                            <i class="fas fa-school"></i>
+                        </div>
+                        <span class="timeline-date">2023</span>
+                        <h3>Higher Secondary / 10th</h3>
+                        <h4>Paranajape, Pune, Maharashtra</h4>
+                        <p>Completed secondary education with a strong foundation in academics.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-badge work">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <span class="timeline-date">Internship</span>
+                        <h3>IT Intern — IBase</h3>
+                        <h4>Pune, Maharashtra</h4>
+                        <p>Learned fundamentals of JSP and Java, gaining hands-on experience with server-side technologies.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-badge work">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <span class="timeline-date">Internship</span>
+                        <h3>Trainee — Maharashtra Informatics</h3>
+                        <h4>Pune, Maharashtra</h4>
+                        <p>Gained experience with Figma for UI/UX design, Python programming, and MongoDB database management.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== ACHIEVEMENTS ===================== -->
+    <section id="achievements" class="section">
+        <div class="container">
+            <h2 class="section-title">Achievements & <span class="highlight">Activities</span></h2>
+            <div class="section-line"></div>
+            <div class="achievements-grid">
+
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>Zonal Football Champion</h3>
+                    <p>Winner of Zonal 2024-25 Football Game</p>
+                    <span class="achievement-year">2024-25</span>
+                </div>
+
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>Poster Making Runner-Up</h3>
+                    <p>Runner up for poster making in Tech Carnival 2k26</p>
+                    <span class="achievement-year">2026</span>
+                </div>
+
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <h3>Treasure Hunt Winner</h3>
+                    <p>Winner of treasure hunt competition in college</p>
+                    <span class="achievement-year">College</span>
+                </div>
+
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-table-tennis-paddle-ball"></i>
+                    </div>
+                    <h3>Table Tennis Champion</h3>
+                    <p>Winner in Table Tennis at Rannagan 2k26</p>
+                    <span class="achievement-year">2026</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section id="contact" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Get In <span class="highlight">Touch</span></h2>
+            <div class="section-line"></div>
+            <p class="section-subtitle">
+                Have a project in mind or want to collaborate? Feel free to reach out!
+            </p>
+            <div class="contact-grid">
+                <div class="contact-cards">
+                    <a href="mailto:akshitpawar1001@gmail.com" class="contact-card">
+                        <div class="contact-card-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h3>Email</h3>
+                            <p>akshitpawar1001@gmail.com</p>
+                        </div>
+                    </a>
+                    <a href="tel:+919822520072" class="contact-card">
+                        <div class="contact-card-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+91 9822520072</p>
+                        </div>
+                    </a>
+                    <a href="https://github.com/CristianoRonaldo070" target="_blank" rel="noopener noreferrer" class="contact-card">
+                        <div class="contact-card-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div>
+                            <h3>GitHub</h3>
+                            <p>CristianoRonaldo070</p>
+                        </div>
+                    </a>
+                    <a href="https://linkedin.com/in/akshit-pawar-a0b952286/" target="_blank" rel="noopener noreferrer" class="contact-card">
+                        <div class="contact-card-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </div>
+                        <div>
+                            <h3>LinkedIn</h3>
+                            <p>Akshit Pawar</p>
+                        </div>
+                    </a>
+                    <div class="contact-card">
+                        <div class="contact-card-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h3>Location</h3>
+                            <p>Kothrud, Pune — 411038</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <a href="#hero" class="footer-logo">AP<span class="logo-dot">.</span></a>
+                <p>&copy; 2026 Akshit Pawar. All rights reserved.</p>
+                <div class="footer-socials">
+                    <a href="https://github.com/CristianoRonaldo070" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/akshit-pawar-a0b952286/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="mailto:akshitpawar1001@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
